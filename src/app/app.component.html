@@ -1,4 +1,10 @@
 <app-header></app-header>
-<p>Contenido Principal</p>
+<div *ngFor="let multa of bills; let i=index">
+    {{multa.description}}
+    <button (click)="deleteBill(i)">Delete</button>
+</div>
+<hr>
+<input #description type="text">
+<button (click)="addBill(description.value); description.value=''">Add</button>
 <app-footer></app-footer>
 
