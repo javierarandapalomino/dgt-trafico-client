@@ -7,10 +7,7 @@ import { Item } from './item.model';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-<<<<<<< HEAD
-  title = 'Javier';
-=======
-  
+
   private numElements:number = 0;
 
   private bills: Item[] = [];
@@ -25,5 +22,4 @@ export class AppComponent {
     this.bills.splice(index, 1);
     this.numElements--;
   }
->>>>>>> refs/remotes/origin/master
 }
